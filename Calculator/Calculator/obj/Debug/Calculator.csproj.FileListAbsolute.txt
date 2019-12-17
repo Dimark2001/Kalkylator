@@ -1,0 +1,37 @@
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+C:\Users\User\Documents\SharpDevelop Projects\Calculator\Calculator\obj\Debug\Calculator.Form2.resources
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.Form2.resources
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.Form4.resources
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Intel\Desktop\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Intel\Desktop\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Intel\Desktop\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.Form3.resources
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.Form5.resources
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.MainForm.resources
+C:\Users\Intel\Desktop\Calculator\Calculator\obj\Debug\Calculator.Form6.resources
+E:\Калькулятор\Calculator\Calculator\bin\Debug\Calculator.exe.config
+E:\Калькулятор\Calculator\Calculator\bin\Debug\Calculator.exe
+E:\Калькулятор\Calculator\Calculator\bin\Debug\Calculator.pdb
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.Form1.resources
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.Form2.resources
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.Form3.resources
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.Form4.resources
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.Form5.resources
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.Form6.resources
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.MainForm.resources
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.exe
+E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.pdb
