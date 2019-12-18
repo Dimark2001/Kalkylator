@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Calculator
 {
@@ -20,6 +21,7 @@ namespace Calculator
 		public Form3()
 		{
 			InitializeComponent();
+			this.Layout += new System.Windows.Forms.LayoutEventHandler(this.Form3Layout); 
 		}
 		void Form3Load(object sender, System.EventArgs e)
 		{
@@ -30,7 +32,13 @@ namespace Calculator
 			Pen pen = new Pen(Color.Blue);
 			Pen pe = new Pen(Color.Red);
 			g.Clear(Color.White);
-			g.TranslateTransform(250.0F, 250.0F);
+			//g.TranslateTransform(450.0F, 250.0F);
+			
+			int wy = this.Height;
+			int wx = this.Width;
+			Debug.WriteLine("x=" + wx.ToString());
+			Debug.WriteLine("y=" + wy.ToString());
+			g.TranslateTransform((float)wx/2, (float)wy/2);
 			
 			float y;
 			int q = int.Parse(textBox1.Text);
@@ -64,6 +72,14 @@ namespace Calculator
 		void Button2Click(object sender, System.EventArgs e)
 		{
 			this.Close();
+		}
+	    private void Form3Layout(object sender, System.Windows.Forms.LayoutEventArgs e)
+		{
+		    int wy = this.Height;
+			int wx = this.Width;
+			Debug.WriteLine("x=" + wx.ToString());
+			Debug.WriteLine("y=" + wy.ToString());
+			Graphics();
 		}
 	}
 }

@@ -56,6 +56,7 @@ namespace Calculator
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBox1.Location = new System.Drawing.Point(35, 427);
 			this.textBox1.Name = "textBox1";
+			this.textBox1.Text = "20";
 			this.textBox1.Size = new System.Drawing.Size(33, 20);
 			this.textBox1.TabIndex = 4;
 			// 
@@ -94,7 +95,7 @@ namespace Calculator
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.button1);
 			this.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.MaximumSize = new System.Drawing.Size(1000, 500);
+			//this.MaximumSize = new System.Drawing.Size(1000, 500);
 			this.MinimumSize = new System.Drawing.Size(500, 500);
 			this.Name = "Form3";
 			this.ShowIcon = false;
