@@ -37,7 +37,9 @@ namespace Calculator
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.textBox11 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
@@ -49,16 +51,34 @@ namespace Calculator
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(17, 20);
 			this.label1.TabIndex = 5;
-			this.label1.Text = "X";
+			this.label1.Text = "a";
+			//
+			// label11
+			// 
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label11.Location = new System.Drawing.Point(12, 447);
+			this.label11.Name = "label1";
+			this.label11.Size = new System.Drawing.Size(17, 20);
+			this.label11.TabIndex = 5;
+			this.label11.Text = "b";
 			// 
 			// textBox1
 			// 
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.textBox1.Location = new System.Drawing.Point(35, 427);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Text = "20";
+			this.textBox1.Text = "0,2";
 			this.textBox1.Size = new System.Drawing.Size(33, 20);
 			this.textBox1.TabIndex = 4;
+			// 
+			// textBox11
+			// 
+			this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.textBox11.Location = new System.Drawing.Point(35, 447);
+			this.textBox11.Name = "textBox11";
+			this.textBox11.Text = "0";
+			this.textBox11.Size = new System.Drawing.Size(33, 20);
+			this.textBox11.TabIndex = 5;
 			// 
 			// button1
 			// 
@@ -76,7 +96,7 @@ namespace Calculator
 			// 
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button2.Location = new System.Drawing.Point(364, 427);
+			this.button2.Location = new System.Drawing.Point(10, 10);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(108, 23);
 			this.button2.TabIndex = 8;
@@ -92,6 +112,8 @@ namespace Calculator
 			this.ClientSize = new System.Drawing.Size(484, 462);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.label1);
+			this.Controls.Add(this.label11);
+			this.Controls.Add(this.textBox11);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.button1);
 			this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -105,7 +127,9 @@ namespace Calculator
 		}
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox textBox11;
 		private System.Windows.Forms.Button button1;
 	}
 }

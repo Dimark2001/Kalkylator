@@ -39,30 +39,37 @@ namespace Calculator
 			Debug.WriteLine("x=" + wx.ToString());
 			Debug.WriteLine("y=" + wy.ToString());
 			g.TranslateTransform((float)wx/2, (float)wy/2);
+			//g.RotateTransform(180F);
 			
-			float y;
-			int q = int.Parse(textBox1.Text);
-			int a = q *(-1);
 			
-			if (q < 0)
+			//зеркалируем относительно Х, чтов Y вверх рос
+			g.ScaleTransform(1, -1);
+			
+			float a = float.Parse(textBox1.Text);
+			float b = float.Parse(textBox11.Text);
+			// Parabola y = ax^2 +b
+			float cx = 0F, cy; // Текущие щ=значения
+			float ox = 0.0F, oy = 0.0F; // Предыдущие значения
+			float sx = 0.1F;			
+			while (true)
 			{
-				for (int x = q; x < a; x++)
-				{
-					y = (x * x)*0.2F;
-					g.DrawLine(pen, x, y, x, y + y/4);
-				}
-			}
-			else
-			{
-				for (int x = q; x > a; x--)
-				{
-					y = -(x * x)*0.2F;
-					g.DrawLine(pen, x, y, x, y + y/4);
-				}
+				cy = a* (cx + sx) * (cx + sx) + b;
+				if (cy > wy/2) break;
+				g.DrawLine(pen, ox, oy, cx, cy);
+				g.DrawLine(pen, -ox, oy, -cx, cy); // т.к. симметричная
+				ox = cx;
+				cx += sx;
+				oy = cy;
+				
 			}
 			
-			g.DrawLine(pe, 0, -1000, 0, 1000);
-			g.DrawLine(pe, -1000, 0, 1000, 0);
+			g.DrawLine(pe, 0, -wy/2, 0, wy/2);
+			g.DrawLine(pe, 0, wy/2, 20, wy/2-20);
+			g.DrawLine(pe, 0, wy/2, -20, wy/2-20);
+			g.DrawLine(pe, -wx/2, 0, wx/2, 0);
+			g.DrawLine(pe, wx/2-8, 0, wx/2-30, -20);
+			g.DrawLine(pe, wx/2-8, 0, wx/2-30, 20);
+			
 		}
 		void Button1Click(object sender, System.EventArgs e)
 		{
