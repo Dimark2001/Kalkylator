@@ -37,148 +37,120 @@ namespace Calculator
 		private void InitializeComponent()
 		{
 			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.radioButton1 = new System.Windows.Forms.RadioButton();
-			this.radioButton2 = new System.Windows.Forms.RadioButton();
-			this.radioButton3 = new System.Windows.Forms.RadioButton();
-			this.radioButton4 = new System.Windows.Forms.RadioButton();
-			this.button1 = new System.Windows.Forms.Button();
+			this.cosRadioBtn = new System.Windows.Forms.RadioButton();
+			this.sinRadioBtn = new System.Windows.Forms.RadioButton();
+			this.squareRadioBtn = new System.Windows.Forms.RadioButton();
+			this.lineRadioBtn = new System.Windows.Forms.RadioButton();
+			this.startButton = new System.Windows.Forms.Button();
+			this.exitButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
 			// 
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label1.Location = new System.Drawing.Point(12, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(200, 27);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Выберите режим";
 			// 
-			// label2
-			// 
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label2.Location = new System.Drawing.Point(21, 79);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(156, 23);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Построение синуса";
-			// 
-			// label3
-			// 
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label3.Location = new System.Drawing.Point(21, 41);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(174, 23);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "Построение косинуса";
-			// 
-			// label4
-			// 
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label4.Location = new System.Drawing.Point(21, 123);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(185, 23);
-			this.label4.TabIndex = 3;
-			this.label4.Text = "Построение пораболы";
-			// 
-			// label5
-			// 
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label5.Location = new System.Drawing.Point(21, 167);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(246, 23);
-			this.label5.TabIndex = 4;
-			this.label5.Text = "Построение линейной функции";
-			// 
 			// radioButton1
 			// 
-			this.radioButton1.Location = new System.Drawing.Point(1, 41);
-			this.radioButton1.Checked = false;
-			this.radioButton1.Name = "radioButton1";
-			this.radioButton1.Size = new System.Drawing.Size(14, 12);
-			this.radioButton1.TabIndex = 5;
-			this.radioButton1.TabStop = true;
-			this.radioButton1.Text = "radioButton1";
-			this.radioButton1.UseVisualStyleBackColor = true;
-			this.radioButton1.Click += new System.EventHandler(this.RadioButton1Click);
+			this.cosRadioBtn.Location = new System.Drawing.Point(1, 41);
+			this.cosRadioBtn.Checked = false;
+			this.cosRadioBtn.Name = "cosRadioBtn";
+			this.cosRadioBtn.TabIndex = 5;
+			this.cosRadioBtn.AutoSize = true;
+			this.cosRadioBtn.TabStop = true;
+			this.cosRadioBtn.Text = "Построение косинуса";
+			this.cosRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
+			this.cosRadioBtn.UseVisualStyleBackColor = true;
+			this.cosRadioBtn.Click += new System.EventHandler(this.cosRadioButtonClick);
 			// 
 			// radioButton2
 			// 
-			this.radioButton2.Location = new System.Drawing.Point(1, 81);
-			this.radioButton2.Name = "radioButton2";
-			this.radioButton2.Size = new System.Drawing.Size(14, 12);
-			this.radioButton2.TabIndex = 6;
-			this.radioButton2.TabStop = true;
-			this.radioButton2.Text = "radioButton2";
-			this.radioButton2.UseVisualStyleBackColor = true;
-			this.radioButton2.Click += new System.EventHandler(this.RadioButton2Click);
+			this.sinRadioBtn.Location = new System.Drawing.Point(1, 79);
+			this.sinRadioBtn.Checked = false;
+			this.sinRadioBtn.Name = "sinRadioBtn";
+			this.sinRadioBtn.AutoSize = true;
+			this.sinRadioBtn.TabIndex = 6;
+			this.sinRadioBtn.TabStop = true;
+			this.sinRadioBtn.Text = "Построение синуса";
+			this.sinRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
+			this.sinRadioBtn.UseVisualStyleBackColor = true;
+			this.sinRadioBtn.Click += new System.EventHandler(this.sinRadioButtonClick);
 			// 
 			// radioButton3
 			// 
-			this.radioButton3.Location = new System.Drawing.Point(1, 123);
-			this.radioButton3.Name = "radioButton3";
-			this.radioButton3.Size = new System.Drawing.Size(14, 12);
-			this.radioButton3.TabIndex = 7;
-			this.radioButton3.TabStop = true;
-			this.radioButton3.Text = "radioButton3";
-			this.radioButton3.UseVisualStyleBackColor = true;
-			this.radioButton3.Click += new System.EventHandler(this.RadioButton3Click);
+			this.squareRadioBtn.Location = new System.Drawing.Point(1, 123);
+			this.squareRadioBtn.Name = "squareRadioBtn";
+			this.squareRadioBtn.Checked = true;
+			this.squareRadioBtn.AutoSize = true;
+			this.squareRadioBtn.TabIndex = 7;
+			this.squareRadioBtn.TabStop = true;
+			this.squareRadioBtn.Text = "Псотроение параболы";
+			this.squareRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
+			this.squareRadioBtn.UseVisualStyleBackColor = true;
+			this.squareRadioBtn.Click += new System.EventHandler(this.squareRadioButtonClick);
 			// 
 			// radioButton4
 			// 
-			this.radioButton4.Location = new System.Drawing.Point(1, 169);
-			this.radioButton4.Name = "radioButton4";
-			this.radioButton4.Size = new System.Drawing.Size(14, 12);
-			this.radioButton4.TabIndex = 8;
-			this.radioButton4.TabStop = true;
-			this.radioButton4.Text = "radioButton4";
-			this.radioButton4.UseVisualStyleBackColor = true;
-			this.radioButton4.Click += new System.EventHandler(this.RadioButton4Click);
+			this.lineRadioBtn.Location = new System.Drawing.Point(1, 169);
+			this.lineRadioBtn.Name = "lineRadioBtn";
+			this.lineRadioBtn.AutoSize = true;
+			this.lineRadioBtn.TabIndex = 8;
+			this.lineRadioBtn.TabStop = true;
+			this.lineRadioBtn.Text = "Построение линейной функции";
+			this.lineRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
+			this.lineRadioBtn.UseVisualStyleBackColor = true;
+			this.lineRadioBtn.Click += new System.EventHandler(this.lineRadioButtonClick);
 			// 
 			// button1
 			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button1.Location = new System.Drawing.Point(102, 193);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 9;
-			this.button1.Text = "Выход";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.Button1Click);
+			this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.exitButton.Location = new System.Drawing.Point(152, 193);
+			this.exitButton.Name = "button1";
+			this.exitButton.Size = new System.Drawing.Size(85, 23);
+			this.exitButton.TabIndex = 9;
+			this.exitButton.Text = "Выход";
+			this.exitButton.UseVisualStyleBackColor = true;
+			this.exitButton.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// startButton
+			// 
+			this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.startButton.Location = new System.Drawing.Point(20, 193);
+			this.startButton.Name = "startButton";
+			this.startButton.Size = new System.Drawing.Size(85, 23);
+			this.startButton.TabIndex = 9;
+			this.startButton.Text = "Построить";
+			this.startButton.UseVisualStyleBackColor = true;
+			this.startButton.Click += new System.EventHandler(this.startButtonClick);
 			// 
 			// Form4
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(264, 218);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.radioButton4);
-			this.Controls.Add(this.radioButton3);
-			this.Controls.Add(this.radioButton2);
-			this.Controls.Add(this.radioButton1);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
+			this.Controls.Add(this.exitButton);
+			this.Controls.Add(this.startButton);
+			this.Controls.Add(this.lineRadioBtn);
+			this.Controls.Add(this.squareRadioBtn);
+			this.Controls.Add(this.sinRadioBtn);
+			this.Controls.Add(this.cosRadioBtn);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Name = "Form4";
+			this.Name = "SelectGraph";
 			this.ShowIcon = false;
 			this.Text = "Графопостроитель";
 			this.ResumeLayout(false);
 		}
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button exitButton;
+		private System.Windows.Forms.Button startButton;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.RadioButton radioButton1;
-		private System.Windows.Forms.RadioButton radioButton2;
-		private System.Windows.Forms.RadioButton radioButton3;
-		private System.Windows.Forms.RadioButton radioButton4;
+		private System.Windows.Forms.RadioButton cosRadioBtn;
+		private System.Windows.Forms.RadioButton sinRadioBtn;
+		private System.Windows.Forms.RadioButton squareRadioBtn;
+		private System.Windows.Forms.RadioButton lineRadioBtn;
 	}
 }

@@ -44,7 +44,16 @@ namespace Calculator
 			th.Start();
 			this.Close();
 		}
-		void RadioButton4Click(object sender, System.EventArgs e)
+		void startButtonClick(object sender, System.EventArgs e)
+		{
+			//throw new NotImplementedException();
+			
+			th = new Thread(exit);
+			th.SetApartmentState(ApartmentState.STA);
+			th.Start();
+			this.Close();
+		}
+		void lineRadioButtonClick(object sender, System.EventArgs e)
 		{
 			FormSinus form = new FormSinus();
 			
@@ -53,7 +62,7 @@ namespace Calculator
 //			th.Start();
 			
 		}
-		void RadioButton3Click(object sender, System.EventArgs e)
+		void squareRadioButtonClick(object sender, System.EventArgs e)
 		{
 			FormSquare form = new FormSquare();
 			form.ShowDialog(); // Application.Run(form);
@@ -62,14 +71,14 @@ namespace Calculator
 //			th.Start();
 			
 		}
-		void RadioButton2Click(object sender, System.EventArgs e)
+		void sinRadioButtonClick(object sender, System.EventArgs e)
 		{
 			th = new Thread(SinRun);
 			th.SetApartmentState(ApartmentState.STA);
 			th.Start();
 			
 		}
-		void RadioButton1Click(object sender, System.EventArgs e)
+		void cosRadioButtonClick(object sender, System.EventArgs e)
 		{
 			th = new Thread(CosRun);
 			th.SetApartmentState(ApartmentState.STA);
