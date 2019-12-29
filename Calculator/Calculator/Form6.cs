@@ -24,7 +24,7 @@ namespace Calculator
 		}
 		void open()
 		{
-			Application.Run(new Form4());
+			Application.Run(new FormSelectGraph());
 		}
 		void open1()
 		{
