@@ -46,66 +46,66 @@ namespace Calculator
 			// 
 			// label1
 			// 
+			this.label1.BackColor = System.Drawing.SystemColors.HighlightText;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label1.Location = new System.Drawing.Point(35, 447);
+			this.label1.Location = new System.Drawing.Point(12, 6);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(17, 20);
 			this.label1.TabIndex = 5;
 			this.label1.Text = "a";
-
 			// 
 			// label11
 			// 
+			this.label11.BackColor = System.Drawing.SystemColors.HighlightText;
 			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label11.Location = new System.Drawing.Point(101, 447);
+			this.label11.Location = new System.Drawing.Point(12, 26);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(17, 20);
 			this.label11.TabIndex = 5;
 			this.label11.Text = "b";
-
 			// 
 			// textBox1
 			// 
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox1.Location = new System.Drawing.Point(58, 447);
+			this.textBox1.Location = new System.Drawing.Point(26, 6);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(33, 20);
 			this.textBox1.TabIndex = 4;
 			this.textBox1.Text = "0,2";
-
 			// 
 			// textBox11
 			// 
 			this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.textBox11.Location = new System.Drawing.Point(124, 447);
+			this.textBox11.Location = new System.Drawing.Point(26, 26);
 			this.textBox11.Name = "textBox11";
 			this.textBox11.Size = new System.Drawing.Size(33, 20);
 			this.textBox11.TabIndex = 5;
 			this.textBox11.Text = "0";
-
 			// 
 			// button1
 			// 
+			this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button1.Location = new System.Drawing.Point(183, 444);
+			this.button1.Location = new System.Drawing.Point(12, 50);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(108, 23);
+			this.button1.Size = new System.Drawing.Size(87, 23);
 			this.button1.TabIndex = 3;
-			this.button1.Text = "построить";
-			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Text = "Построить";
+			this.button1.UseVisualStyleBackColor = false;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// button2
 			// 
+			this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button2.Location = new System.Drawing.Point(10, 10);
+			this.button2.Location = new System.Drawing.Point(12, 79);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(108, 23);
+			this.button2.Size = new System.Drawing.Size(87, 23);
 			this.button2.TabIndex = 8;
 			this.button2.Text = "Выход";
-			this.button2.UseVisualStyleBackColor = true;
+			this.button2.UseVisualStyleBackColor = false;
 			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
 			// FormSquare
@@ -114,11 +114,11 @@ namespace Calculator
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.Control;
 			this.ClientSize = new System.Drawing.Size(492, 473);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.label11);
 			this.Controls.Add(this.textBox11);
 			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.label11);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.MinimumSize = new System.Drawing.Size(500, 500);
