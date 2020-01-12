@@ -21,10 +21,12 @@ namespace Calculator
 		public FormSquare()
 		{
 			InitializeComponent();
-			this.Layout += new System.Windows.Forms.LayoutEventHandler(this.Form3Layout); 
+			this.Layout += new System.Windows.Forms.LayoutEventHandler(this.SquareLayout);
+			Graphics();
 		}
 		void Form3Load(object sender, System.EventArgs e)
 		{
+		
 		}
 		void Graphics()
 		{
@@ -36,8 +38,8 @@ namespace Calculator
 			
 			int wy = this.Height;
 			int wx = this.Width;
-			Debug.WriteLine("x=" + wx.ToString());
-			Debug.WriteLine("y=" + wy.ToString());
+			Debug.WriteLine("draw!");
+//			Debug.WriteLine("y=" + wy.ToString());
 			g.TranslateTransform((float)wx/2, (float)wy/2);
 			//g.RotateTransform(180F);
 			
@@ -72,20 +74,23 @@ namespace Calculator
 			
 		}
 		void Button1Click(object sender, System.EventArgs e)
-		{
-			
+		{			
 			Graphics();
 		}
 		void Button2Click(object sender, System.EventArgs e)
 		{
 			this.Close();
 		}
-	    private void Form3Layout(object sender, System.Windows.Forms.LayoutEventArgs e)
+	    private void SquareLayout(object sender, System.Windows.Forms.LayoutEventArgs e)
 		{
 		    int wy = this.Height;
 			int wx = this.Width;
 			Debug.WriteLine("x=" + wx.ToString());
 			Debug.WriteLine("y=" + wy.ToString());
+			Button1Click(sender, e);
+		}
+	    void FormSquareShown(object sender, System.EventArgs e)
+		{
 			Graphics();
 		}
 	}

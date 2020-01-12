@@ -58,9 +58,9 @@
     <Compile Include="FormSinus.Designer.cs">
       <DependentUpon>FormSinus.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormParabola.cs" />
-    <Compile Include="FormParabola.Designer.cs">
-      <DependentUpon>FormParabola.cs</DependentUpon>
+    <Compile Include="FormSquare.cs" />
+    <Compile Include="FormSquare.Designer.cs">
+      <DependentUpon>FormSquare.cs</DependentUpon>
     </Compile>
     <Compile Include="FormSelectGraph.cs" />
     <Compile Include="FormSelectGraph.Designer.cs">
@@ -91,8 +91,8 @@
     <EmbeddedResource Include="FormSinus.resx">
       <DependentUpon>FormSinus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormParabola.resx">
-      <DependentUpon>FormParabola.cs</DependentUpon>
+    <EmbeddedResource Include="FormSquare.resx">
+      <DependentUpon>FormSquare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSelectGraph.resx">
       <DependentUpon>FormSelectGraph.cs</DependentUpon>

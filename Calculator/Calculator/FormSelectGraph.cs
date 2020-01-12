@@ -30,6 +30,8 @@ namespace Calculator
 		void SqaureRun(object obj)
 		{
 			Application.Run(new FormSquare());
+			//FormSquare form = new FormSquare();
+			//form.ShowDialog();
 		}
 		void LineRun(object obj)
 		{
@@ -47,42 +49,24 @@ namespace Calculator
 		void startButtonClick(object sender, System.EventArgs e)
 		{
 			//throw new NotImplementedException();
-			
-			th = new Thread(exit);
+//			FormSquare form = new FormSquare();
+			th = new Thread(SqaureRun);
 			th.SetApartmentState(ApartmentState.STA);
 			th.Start();
-			this.Close();
+//			this.Close();
 		}
-		void lineRadioButtonClick(object sender, System.EventArgs e)
+		void graphSelectRadioButtonClick(object sender, System.EventArgs e)
 		{
-			FormSinus form = new FormSinus();
-			
+			RadioButton rb = sender as RadioButton;
+			if (rb == null)
+		    {
+		        MessageBox.Show("Sender is not a RadioButton");
+		        return;
+		    }
+
 //			th = new Thread(new ThreadStart(form.Graphics()));
 //			th.SetApartmentState(ApartmentState.STA);
 //			th.Start();
-			
-		}
-		void squareRadioButtonClick(object sender, System.EventArgs e)
-		{
-			FormSquare form = new FormSquare();
-			form.ShowDialog(); // Application.Run(form);
-//			th = new Thread(open2);
-//			th.SetApartmentState(ApartmentState.STA);
-//			th.Start();
-			
-		}
-		void sinRadioButtonClick(object sender, System.EventArgs e)
-		{
-			th = new Thread(SinRun);
-			th.SetApartmentState(ApartmentState.STA);
-			th.Start();
-			
-		}
-		void cosRadioButtonClick(object sender, System.EventArgs e)
-		{
-			th = new Thread(CosRun);
-			th.SetApartmentState(ApartmentState.STA);
-			th.Start();
 			
 		}
 		

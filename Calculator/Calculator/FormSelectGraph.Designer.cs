@@ -14,7 +14,7 @@ namespace Calculator
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		
+		System.Windows.Forms.RadioButton pressedRb = new System.Windows.Forms.RadioButton();
 		/// <summary>
 		/// Disposes resources used by the form.
 		/// </summary>
@@ -54,67 +54,58 @@ namespace Calculator
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Выберите режим";
 			// 
-			// radioButton1
+			// cosRadioBtn
 			// 
-			this.cosRadioBtn.Location = new System.Drawing.Point(1, 41);
-			this.cosRadioBtn.Checked = false;
-			this.cosRadioBtn.Name = "cosRadioBtn";
-			this.cosRadioBtn.TabIndex = 5;
 			this.cosRadioBtn.AutoSize = true;
+			this.cosRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
+			this.cosRadioBtn.Location = new System.Drawing.Point(1, 41);
+			this.cosRadioBtn.Name = "cosRadioBtn";
+			this.cosRadioBtn.Size = new System.Drawing.Size(189, 21);
+			this.cosRadioBtn.TabIndex = 5;
 			this.cosRadioBtn.TabStop = true;
 			this.cosRadioBtn.Text = "Построение косинуса";
-			this.cosRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
 			this.cosRadioBtn.UseVisualStyleBackColor = true;
-			this.cosRadioBtn.Click += new System.EventHandler(this.cosRadioButtonClick);
+			this.cosRadioBtn.Click += new System.EventHandler(this.graphSelectRadioButtonClick);
 			// 
-			// radioButton2
+			// sinRadioBtn
 			// 
-			this.sinRadioBtn.Location = new System.Drawing.Point(1, 79);
-			this.sinRadioBtn.Checked = false;
-			this.sinRadioBtn.Name = "sinRadioBtn";
 			this.sinRadioBtn.AutoSize = true;
+			this.sinRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
+			this.sinRadioBtn.Location = new System.Drawing.Point(1, 79);
+			this.sinRadioBtn.Name = "sinRadioBtn";
+			this.sinRadioBtn.Size = new System.Drawing.Size(172, 21);
 			this.sinRadioBtn.TabIndex = 6;
 			this.sinRadioBtn.TabStop = true;
 			this.sinRadioBtn.Text = "Построение синуса";
-			this.sinRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
 			this.sinRadioBtn.UseVisualStyleBackColor = true;
-			this.sinRadioBtn.Click += new System.EventHandler(this.sinRadioButtonClick);
+			this.sinRadioBtn.Click += new System.EventHandler(this.graphSelectRadioButtonClick);
 			// 
-			// radioButton3
+			// squareRadioBtn
 			// 
+			this.squareRadioBtn.AutoSize = true;
+			this.squareRadioBtn.Checked = true;
+			this.squareRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
 			this.squareRadioBtn.Location = new System.Drawing.Point(1, 123);
 			this.squareRadioBtn.Name = "squareRadioBtn";
-			this.squareRadioBtn.Checked = true;
-			this.squareRadioBtn.AutoSize = true;
+			this.squareRadioBtn.Size = new System.Drawing.Size(195, 21);
 			this.squareRadioBtn.TabIndex = 7;
 			this.squareRadioBtn.TabStop = true;
 			this.squareRadioBtn.Text = "Псотроение параболы";
-			this.squareRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
 			this.squareRadioBtn.UseVisualStyleBackColor = true;
-			this.squareRadioBtn.Click += new System.EventHandler(this.squareRadioButtonClick);
+			this.squareRadioBtn.Click += new System.EventHandler(this.graphSelectRadioButtonClick);
 			// 
-			// radioButton4
+			// lineRadioBtn
 			// 
+			this.lineRadioBtn.AutoSize = true;
+			this.lineRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
 			this.lineRadioBtn.Location = new System.Drawing.Point(1, 169);
 			this.lineRadioBtn.Name = "lineRadioBtn";
-			this.lineRadioBtn.AutoSize = true;
+			this.lineRadioBtn.Size = new System.Drawing.Size(262, 21);
 			this.lineRadioBtn.TabIndex = 8;
 			this.lineRadioBtn.TabStop = true;
 			this.lineRadioBtn.Text = "Построение линейной функции";
-			this.lineRadioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(100)));
 			this.lineRadioBtn.UseVisualStyleBackColor = true;
-			this.lineRadioBtn.Click += new System.EventHandler(this.lineRadioButtonClick);
-			// 
-			// button1
-			// 
-			this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.exitButton.Location = new System.Drawing.Point(152, 193);
-			this.exitButton.Name = "button1";
-			this.exitButton.Size = new System.Drawing.Size(85, 23);
-			this.exitButton.TabIndex = 9;
-			this.exitButton.Text = "Выход";
-			this.exitButton.UseVisualStyleBackColor = true;
-			this.exitButton.Click += new System.EventHandler(this.Button1Click);
+			this.lineRadioBtn.Click += new System.EventHandler(this.graphSelectRadioButtonClick);
 			// 
 			// startButton
 			// 
@@ -127,7 +118,18 @@ namespace Calculator
 			this.startButton.UseVisualStyleBackColor = true;
 			this.startButton.Click += new System.EventHandler(this.startButtonClick);
 			// 
-			// Form4
+			// exitButton
+			// 
+			this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.exitButton.Location = new System.Drawing.Point(152, 193);
+			this.exitButton.Name = "exitButton";
+			this.exitButton.Size = new System.Drawing.Size(85, 23);
+			this.exitButton.TabIndex = 9;
+			this.exitButton.Text = "Выход";
+			this.exitButton.UseVisualStyleBackColor = true;
+			this.exitButton.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// FormSelectGraph
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,10 +142,11 @@ namespace Calculator
 			this.Controls.Add(this.cosRadioBtn);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Name = "SelectGraph";
+			this.Name = "FormSelectGraph";
 			this.ShowIcon = false;
 			this.Text = "Графопостроитель";
 			this.ResumeLayout(false);
+			this.PerformLayout();
 		}
 		private System.Windows.Forms.Button exitButton;
 		private System.Windows.Forms.Button startButton;
