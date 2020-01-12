@@ -41,7 +41,7 @@ namespace Calculator
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.textBox11 = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.exitButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -97,16 +97,16 @@ namespace Calculator
 			// 
 			// button2
 			// 
-			this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button2.Location = new System.Drawing.Point(12, 79);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(87, 23);
-			this.button2.TabIndex = 8;
-			this.button2.Text = "Выход";
-			this.button2.UseVisualStyleBackColor = false;
-			this.button2.Click += new System.EventHandler(this.Button2Click);
+			this.exitButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.exitButton.Location = new System.Drawing.Point(12, 79);
+			this.exitButton.Name = "button2";
+			this.exitButton.Size = new System.Drawing.Size(87, 23);
+			this.exitButton.TabIndex = 8;
+			this.exitButton.Text = "Выход";
+			this.exitButton.UseVisualStyleBackColor = false;
+			this.exitButton.Click += new System.EventHandler(this.Button2Click);
 			// 
 			// FormSquare
 			// 
@@ -118,7 +118,7 @@ namespace Calculator
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label11);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.button2);
+			this.Controls.Add(this.exitButton);
 			this.Controls.Add(this.button1);
 			this.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.MinimumSize = new System.Drawing.Size(500, 500);
@@ -132,7 +132,7 @@ namespace Calculator
 			this.PerformLayout();
 		}
 		
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button exitButton;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.TextBox textBox1;
