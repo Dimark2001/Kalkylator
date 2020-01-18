@@ -18,6 +18,7 @@ namespace Calculator
 	/// </summary>
 	public partial class FormSquare : Form
 	{
+	
 		public FormSquare()
 		{
 			InitializeComponent();

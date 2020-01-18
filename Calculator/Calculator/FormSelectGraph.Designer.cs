@@ -127,7 +127,7 @@ namespace Calculator
 			this.exitButton.TabIndex = 9;
 			this.exitButton.Text = "Выход";
 			this.exitButton.UseVisualStyleBackColor = true;
-			this.exitButton.Click += new System.EventHandler(this.Button1Click);
+			this.exitButton.Click += new System.EventHandler(this.exitButtonClick);
 			// 
 			// FormSelectGraph
 			// 
