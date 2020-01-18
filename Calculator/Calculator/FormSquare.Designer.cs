@@ -71,7 +71,7 @@ namespace Calculator
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(33, 20);
 			this.textBox1.TabIndex = 4;
-			this.textBox1.Text = "0,2";
+			this.textBox1.Text = "1,0";
 			// 
 			// textBox11
 			// 
