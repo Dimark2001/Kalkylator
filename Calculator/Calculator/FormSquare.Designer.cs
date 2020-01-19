@@ -95,13 +95,13 @@ namespace Calculator
 			this.button1.UseVisualStyleBackColor = false;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
-			// button2
+			// exitButton
 			// 
 			this.exitButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
 			this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.exitButton.Location = new System.Drawing.Point(12, 79);
-			this.exitButton.Name = "button2";
+			this.exitButton.Name = "exitButton";
 			this.exitButton.Size = new System.Drawing.Size(87, 23);
 			this.exitButton.TabIndex = 8;
 			this.exitButton.Text = "Выход";
@@ -128,6 +128,7 @@ namespace Calculator
 			this.Activated += new System.EventHandler(this.FormSquareShown);
 			this.Load += new System.EventHandler(this.FormSquareLoad);
 			this.Shown += new System.EventHandler(this.FormSquareShown);
+			this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormSquarePaint);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}

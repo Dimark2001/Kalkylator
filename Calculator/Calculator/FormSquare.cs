@@ -41,26 +41,17 @@ namespace Calculator
 			Pen pen = new Pen(Color.Blue);
 			Pen pe = new Pen(Color.Red);
 			g.Clear(Color.White);
-			//g.TranslateTransform(450.0F, 250.0F);
 			
 			int wy = this.Height;
 			int wx = this.Width;
-			Debug.WriteLine("draw!");
-//			Debug.WriteLine("y=" + wy.ToString());
-			g.TranslateTransform((float)wx/2, (float)wy/2);
-			//g.RotateTransform(180F);
-			
-			
-			//зеркалируем относительно Х, чтов Y вверх рос
-//		g.ScaleTransform(1, -1);
-			
 			float a = float.Parse(textBox1.Text);
 			float b = float.Parse(textBox11.Text);
 			// Parabola y = ax^2 +b
 			float cx = 0F, cy; // Текущие значения
 			float ox = 0.0F, oy = 0.0F; // Предыдущие значения
 			float sx = 1.0F;
-			int k = 50;			
+			int k = 50;	
+			g.TranslateTransform((float)wx/2, (float)wy/2);
 			while (true)
 			{
 				float x = (cx + sx) / k;
@@ -103,7 +94,6 @@ namespace Calculator
 			Char[] c;
 			c = name.ToCharArray(0,name.Length);
 			Font f  = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-//		g.ScaleTransform(1, -1);
 			for (int i=0; i<n; i++)
 			{
 				string s = string.Join("",c[i]);
@@ -130,6 +120,11 @@ namespace Calculator
 			Button1Click(sender, e);
 		}
 	    void FormSquareShown(object sender, System.EventArgs e)
+		{
+			Graphics();
+		}
+		
+		void FormSquarePaint(object sender, PaintEventArgs e)
 		{
 			Graphics();
 		}

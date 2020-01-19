@@ -35,18 +35,7 @@ namespace Calculator
 			g.Clear(Color.White);
 			int wy = this.Height;
 			int wx = this.Width;
-//			Debug.WriteLine("draw!");
-//			Debug.WriteLine("y=" + wy.ToString());
 			g.TranslateTransform((float)wx/2, (float)wy/2);
-			//g.RotateTransform(180F);
-			
-			
-			//зеркалируем относительно Х, чтов Y вверх рос
-//		g.ScaleTransform(1, -1);
-			
-//			float a = float.Parse(textBox1.Text);
-//			float b = float.Parse(textBox11.Text);
-			// не Parabola y = ax^2 +b
 			
 			int ky = (int)(0.75 * wy/2); //200;
 			int kx = 1;			
@@ -95,7 +84,7 @@ namespace Calculator
 			Char[] c;
 			c = name.ToCharArray(0,name.Length);
 			Font f  = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-//		g.ScaleTransform(1, -1);
+
 			for (int i=0; i<n; i++)
 			{
 				string s = string.Join("",c[i]);
@@ -117,8 +106,6 @@ namespace Calculator
 		{
 		    int wy = this.Height;
 			int wx = this.Width;
-//			Debug.WriteLine("x=" + wx.ToString());
-//			Debug.WriteLine("y=" + wy.ToString());
 			Button1Click(sender, e);
 		}
 	    void FormCosinusShown(object sender, System.EventArgs e)

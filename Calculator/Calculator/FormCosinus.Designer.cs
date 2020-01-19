@@ -103,7 +103,6 @@ namespace Calculator
 			this.Load += new System.EventHandler(this.FormCosinusLoad);
 			this.Shown += new System.EventHandler(this.FormCosinusShown);
 			this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormCosinusPaint);
-			this.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.FormCosinusChangeUICues);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
@@ -115,17 +114,6 @@ namespace Calculator
 		{
 			
 		}
-		
-		void FormCosinusVisibleChanged(object sender, System.EventArgs e)
-		{
-			
-		}
-		
-		void FormCosinusChangeUICues(object sender, System.Windows.Forms.UICuesEventArgs e)
-		{
-			
-		}
-		
 		
 	}
 }
