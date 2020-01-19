@@ -6,6 +6,7 @@
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
+ using System.Diagnostics;
 namespace Calculator
 {
 	partial class FormCosinus
@@ -84,24 +85,47 @@ namespace Calculator
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.Button2Click);
 			// 
-			// Form1
+			// FormCosinus
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(484, 462);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.label1);
+			this.BackColor = System.Drawing.SystemColors.Control;
+			this.ClientSize = new System.Drawing.Size(492, 473);
 			this.Controls.Add(this.textBox1);
-			this.MaximumSize = new System.Drawing.Size(500, 1000);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.button1);
+			this.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.MinimumSize = new System.Drawing.Size(500, 500);
-			this.Name = "Form1";
-			this.Text = "Косинус";
+			this.Name = "FormCosinus";
+			this.ShowIcon = false;
+			this.Text = "Sin";
+			this.Activated += new System.EventHandler(this.FormCosinusShown);
+			this.Load += new System.EventHandler(this.FormCosinusLoad);
+			this.Shown += new System.EventHandler(this.FormCosinusShown);
+			this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormCosinusPaint);
+			this.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.FormCosinusChangeUICues);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox textBox1;
+		
+		void FormCosinusLoad(object sender, System.EventArgs e)
+		{
+			
+		}
+		
+		void FormCosinusVisibleChanged(object sender, System.EventArgs e)
+		{
+			
+		}
+		
+		void FormCosinusChangeUICues(object sender, System.Windows.Forms.UICuesEventArgs e)
+		{
+			
+		}
+		
+		
 	}
 }

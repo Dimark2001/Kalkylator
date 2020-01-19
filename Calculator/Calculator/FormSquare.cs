@@ -80,7 +80,7 @@ namespace Calculator
 			g.DrawLine(pe, wx/2-8, 0, wx/2-30, -20);
 			g.DrawLine(pe, wx/2-8, 0, wx/2-30, 20);
 			
-			for (int i = k; i < wx-50; i += k) {
+			for (int i = k; i < wx/2-20; i += k) {
 				g.DrawLine(pe, i, 5, i, -5);
 				g.DrawLine(pe, -i, 5, -i, -5);
 				int t = (int)(i / k);
@@ -88,7 +88,7 @@ namespace Calculator
 				g.DrawString(t.ToString(), Font, Brushes.Black, i-5, 16);
 				g.DrawString(tt.ToString(), Font, Brushes.Black, -i-5, 16);
 			}
-			for (int i = 0; i < wy-50; i += k) {
+			for (int i = 0; i < wy/2-20; i += k) {
 				g.DrawLine(pe, -5, i, 5, i);
 				g.DrawLine(pe, -5, -i, 5, -i);
 				int t = (int)(i / k);
