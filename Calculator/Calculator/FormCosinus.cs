@@ -17,41 +17,71 @@ namespace Calculator
 			Graphics();
 		}
 		
-		void PictureBox1Paint(object sender, PaintEventArgs e)
-		{
-			
-		}
+		private	Pen pen = new Pen(Color.Blue);
+		private Pen pe = new Pen(Color.Red);
+		
 		private float Y(float y)
 		{
 			float wy = (float)this.Height;
 				
 				return  - y;
 		}
-		void Graphics()
+		private void drawSin(Graphics g, int wx, int wy)
 		{
-			Graphics g = this.CreateGraphics();
-			Pen pen = new Pen(Color.Blue);
-			Pen pe = new Pen(Color.Red);
-			g.Clear(Color.White);
-			int wy = this.Height;
-			int wx = this.Width;
-			g.TranslateTransform((float)wx/2, (float)wy/2);
-			
-			int ky = (int)(0.75 * wy/2); //200;
-			int kx = 1;			
-			float ox = -kx*(wx/2), oy = ky * (float)Math.Sin(ox*Math.PI/180); // Предыдущие значения
-			float cx = ox, cy; // Текущие значения
-			float sx = 1.0F; //Math.PI/180;
-			
-			while (true)
+			int ky = (int)(0.75 * wy/2); //Масштаб по Y, 1 - 75% высоты окна
+			int kx = 1;			// Коэффициент по Х на будущее
+			float ox = -kx*(wx/2); // Левая граница окна, минимальное значение
+			float oy = ky * (float)Math.Sin(ox*Math.PI/180); // Перврое значения
+			float cx, cy; // Текущие значения
+			const float sx = 1.0F; //шаг по х в градусах
+			for (cx = ox; cx < wx/2; cx += sx)
 			{
 				float x = (cx + sx);
 				cy = ky * (float)Math.Sin(x*Math.PI/180);
-				if ( cx > wx/2) break;
 			    g.DrawLine(pen, ox, Y(oy), cx, Y(cy));
 				ox = cx;
+				oy = cy;
 				cx += sx;
-				oy = cy;				
+			}
+		}
+		private void drawCos(Graphics g, int wx, int wy)
+		{
+			int ky = (int)(0.75 * wy/2); //Масштаб по Y, 1 - 75% высоты окна
+			int kx = 1;			// Коэффициент по Х на будущее
+			float ox = -kx*(wx/2); // Левая граница окна, минимальное значение
+			float oy = ky * (float)Math.Cos(ox*Math.PI/180); // Перврое значения
+			float cx, cy; // Текущие значения
+			const float sx = 1.0F; //шаг по х в градусах
+			for (cx = ox; cx < wx/2; cx += sx)
+			{
+				float x = (cx + sx);
+				cy = ky * (float)Math.Cos(x*Math.PI/180);
+			    g.DrawLine(pen, ox, Y(oy), cx, Y(cy));
+				ox = cx;
+				oy = cy;
+				cx += sx;
+			}
+		}
+		void Graphics()
+		{
+			Graphics g = this.CreateGraphics();
+
+			g.Clear(Color.White);
+			int wy = this.Height;
+			int wx = this.Width;
+			int ky = (int)(0.75 * wy/2); //Масштаб по Y, 1 - 75% высоты окна
+			int kx = 1;
+			g.TranslateTransform((float)wx/2, (float)wy/2);
+			
+			if (this.sinCheckBox.Checked)
+			{
+				drawSin(g, wx, wy);
+			}
+			
+			
+			if (this.cosCheckBox.Checked)
+			{
+				drawCos(g, wx, wy);
 			}
 			
 			g.DrawLine(pe, 0, Y(-wy/2), 0, Y(wy/2));
@@ -115,6 +145,14 @@ namespace Calculator
 	    void FormCosinusPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 		{
 			Debug.WriteLine("Paint");
+			Graphics();
+		}
+		void SinCheckBoxCheckedChanged(object sender, EventArgs e)
+		{
+			Graphics();
+		}
+		void CosCheckBoxCheckedChanged(object sender, EventArgs e)
+		{
 			Graphics();
 		}
 	}

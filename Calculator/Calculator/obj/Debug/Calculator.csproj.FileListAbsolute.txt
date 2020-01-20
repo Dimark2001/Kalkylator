@@ -38,11 +38,8 @@ E:\Калькулятор\Calculator\Calculator\obj\Debug\Calculator.pdb
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\bin\Debug\Calculator.exe.config
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\bin\Debug\Calculator.exe
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\bin\Debug\Calculator.pdb
-C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.Form6.resources
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.MainForm.resources
-C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\GenerateResource.read.1.tlog
-C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.exe
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.pdb
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.FormCosinus.resources
@@ -50,3 +47,5 @@ C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.Fo
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.FormSquare.resources
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.FormLine.resources
 C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.FormSelectGraph.resources
+C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Geodirect\kalk\Kalkylator\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
