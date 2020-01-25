@@ -1,2 +1,2 @@
-"# Kalkylator"  
+"# Calculator"  
 "# Kalkylator" 
